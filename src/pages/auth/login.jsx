@@ -17,10 +17,6 @@ const Login = () => {
   const loginAction = () => {
     setAuth(false)
   }
-
-  const logoutAction = () => {
-    setAuth(false)
-  }
   return (
       <>
         {console.log(auth)}
