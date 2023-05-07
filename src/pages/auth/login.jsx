@@ -7,6 +7,10 @@ import contacto2 from "../../contacto2.jpg"
 import contacto3 from "../../contacto3.jpg"
 import contacto4 from "../../contacto4.jpg"
 import contacto5 from "../../contacto5.jpg"
+import doctor1 from "../../doctor1 .jpg"
+import doctor2 from "../../doctor2.jpg"
+import doctor3 from "../../doctor3.jpg"
+import doctor4 from "../../doctor4.jpg"
 import CallIcon from '@mui/icons-material/Call';
 
 const Login = () => {
@@ -41,7 +45,7 @@ const Login = () => {
           </Container></>
         ) : (
           <>
-            <Box sx={{ width: "100vw", height: "100vh", display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: "#E8F8F5"}}>
+            <Box sx={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: "#E8F8F5"}}>
               <Box sx= {{ width: "90vw", height: "15vh", marginTop: "20px", display: "flex", flexDirection: "row", alignItems: "center", marginLeft: "80px"}}>
                 <CardMedia component="img" image={avatar}  sx={{height: "100px", width: "100px", borderRadius: "50%", border: "1px solid black"}}/>
                 <Typography paragraph sx={{ fontSize: "38px", fontFamily: "monospace", fontWeight: "bold", marginLeft: "30px"}}>Hola Juan Esteban Lugo</Typography>
@@ -55,7 +59,7 @@ const Login = () => {
                     <Typography variant="body2" color="text.secondary" sx={{fontSize: "22px", fontFamily: "monospace", fontWeight: "bold", color: "black"}}>
                     Hija Martina
                     </Typography>
-                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "120px", marginTop: "10px", height: "30px" }}>LLamar</Button>
+                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "170px", marginTop: "10px", height: "30px" }}>Videollamada</Button>
                   </CardContent>
                 </Card>
                 <Card sx={{width: "180px", height: "240px", backgroundColor: "#D6EAF8", display: "flex", flexDirection: "column", alignItems: "center",  border: "1px solid #D6EAF8", textAlign: "center"}}>
@@ -64,7 +68,7 @@ const Login = () => {
                     <Typography variant="body2" color="text.secondary" sx={{fontSize: "22px", fontFamily: "monospace", fontWeight: "bold", color: "black"}}>
                     Sobrino Jose
                     </Typography>
-                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "120px", marginTop: "10px", height: "30px" }}>LLamar</Button>
+                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "170px", marginTop: "10px", height: "30px" }}>Videollamada</Button>
                   </CardContent>
                 </Card>
                 <Card sx={{width: "180px", height: "240px", backgroundColor: "#D6EAF8", display: "flex", flexDirection: "column", alignItems: "center",  border: "1px solid #D6EAF8", textAlign: "center"}}>
@@ -73,7 +77,7 @@ const Login = () => {
                     <Typography variant="body2" color="text.secondary" sx={{fontSize: "22px", fontFamily: "monospace", fontWeight: "bold", color: "black"}}>
                     Hijo Luis
                     </Typography>
-                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "120px", marginTop: "10px", height: "30px" }}>LLamar</Button>
+                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "170px", marginTop: "10px", height: "30px" }}>Videollamada</Button>
                   </CardContent>
                 </Card>
                 <Card sx={{width: "180px", height: "240px", backgroundColor: "#D6EAF8", display: "flex", flexDirection: "column", alignItems: "center",  border: "1px solid #D6EAF8", textAlign: "center"}}>
@@ -82,7 +86,7 @@ const Login = () => {
                     <Typography variant="body2" color="text.secondary" sx={{fontSize: "22px", fontFamily: "monospace", fontWeight: "bold", color: "black"}}>
                     Abogado 
                     </Typography>
-                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "120px", marginTop: "10px", height: "30px" }}>LLamar</Button>
+                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "170px", marginTop: "10px", height: "30px" }}>Videollamada</Button>
                   </CardContent>
                 </Card>
                 <Card sx={{width: "180px", height: "240px", backgroundColor: "#D6EAF8", display: "flex", flexDirection: "column", alignItems: "center",  border: "1px solid #D6EAF8", textAlign: "center"}}>
@@ -91,13 +95,73 @@ const Login = () => {
                     <Typography variant="body2" color="text.secondary" sx={{fontSize: "22px", fontFamily: "monospace", fontWeight: "bold", color: "black"}}>
                     Esposa
                     </Typography>
-                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "120px", marginTop: "10px", height: "30px" }}>LLamar</Button>
+                    <Button variant="contained" startIcon={<CallIcon />} color="success" sx={{ fontSize: "18px", fontFamily: "monospace", fontWeight: "bold", width: "170px", marginTop: "10px", height: "30px" }}>Videollamada</Button>
                   </CardContent>
                 </Card>
                 </Box>
-                
               </Box>
+              <Box sx={{ width: "96vw", height: "520px", backgroundColor: "#118528", marginTop: "180px", borderRadius: "20px", color: "white"}}>
+                <Typography paragraph sx={{fontSize: "40px", fontFamily: "monospace", fontWeight: "bold", marginTop: "20px"}}>Los profesionales para ti según su diagnóstico:</Typography>
+                <Box sx={{ width: "100%", height: "300px", display: "flex", flexDirection: "row", justifyContent: "space-evenly", marginTop: "20px"}}>
+                  <Card sx={{ width: "30%" , height: "150px", borderRadius: "15px" ,display: 'flex', cursor: "pointer" }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                      <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                        <Typography component="div" variant="h5">
+                          Juliana Guerra
+                        </Typography>
+                        <Typography variant="subtitle1" color="text.secondary" component="div">
+                           Psicologia
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                    <CardMedia component="img" sx={{ width: "170px", height: "150px", borderRadius: "10px" }} image={doctor1}  />
+                  </Card>
+                  <Card sx={{ width: "30%" , height: "150px", borderRadius: "15px" ,display: 'flex', cursor: "pointer" }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                      <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                        <Typography component="div" variant="h5">
+                          Daniel Castellanos
+                        </Typography>
+                        <Typography variant="subtitle1" color="text.secondary" component="div">
+                           Reumatologia
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                    <CardMedia component="img" sx={{ width: "170px", height: "150px", borderRadius: "10px" }} image={doctor2}  />
+                  </Card>
+                </Box>
+                <Box sx={{ width: "100%", height: "300px", display: "flex", flexDirection: "row", justifyContent: "space-evenly", marginTop: "-100px"}}>
+                  <Card sx={{ width: "30%" , height: "150px", borderRadius: "15px" ,display: 'flex', cursor: "pointer" }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                      <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                        <Typography component="div" variant="h5">
+                          Martin Castañe
+                        </Typography>
+                        <Typography variant="subtitle1" color="text.secondary" component="div">
+                           Cardiologia
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                    <CardMedia component="img" sx={{ width: "170px", height: "150px", borderRadius: "10px" }} image={doctor3}  />
+                  </Card>
+                  <Card sx={{ width: "30%" , height: "150px", borderRadius: "15px" ,display: 'flex', cursor: "pointer" }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                      <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                        <Typography component="div" variant="h5">
+                          Laura Anacona
+                        </Typography>
+                        <Typography variant="subtitle1" color="text.secondary" component="div">
+                           Oftalmologia
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                    <CardMedia component="img" sx={{ width: "170px", height: "150px", borderRadius: "10px" }} image={doctor4}  />
+                  </Card>
+                </Box>
+              </Box>
+              <Box sx={{ width: "96vw", height: "100px"}}></Box>
             </Box>
+            
           </>
         )}
       </>
