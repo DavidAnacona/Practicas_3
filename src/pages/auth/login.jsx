@@ -159,7 +159,12 @@ const Login = () => {
                   </Card>
                 </Box>
               </Box>
-              <Box sx={{ width: "96vw", height: "100px"}}></Box>
+              <Box sx={{ width: "96vw", height: "100px"}}>
+                <Typography paragraph>Registro con seleccion de usuario tipo paciente o doctor, donde para paciente utilizar campo de cargar historial medico </Typography>
+                <Typography paragraph>Seccion con historial medico y examanes donde deje ver las opciones d cargar examen medico o ver examenes medicos</Typography>
+                <Typography paragraph>Blog con informacion relacionada a la enfermedad o enfermedades padecidas por el paciente</Typography>
+                <Typography paragraph>boton salir</Typography>
+              </Box>
             </Box>
             
           </>
