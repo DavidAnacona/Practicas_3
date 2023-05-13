@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Typography, Button } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const Politics  = () => {
     <>
@@ -16,8 +17,8 @@ const Politics  = () => {
             }}>
               <Typography variant='h3' sx={{fontWeight: "bold", fontFamily: "monospace"}}>Bienvenido a CPDC</Typography>
               <Typography paragraph sx={{ marginTop: "20px", fontSize: "18px", fontFamily: "monospace"}} >Al darle aceptar declara que CPDC puede utilizar su información personal según los términos y condiciones de políticas de privacidad y políticas de protección de datos de acuerdo a la Ley de Protección de Datos Personales 1581 de 2012</Typography>
-              <Link to="/home"><Button variant="contained" sx={{fontSize: "22px", width: "300px", marginTop: "20px", fontFamily: "monospace", fontWeight: "bold"}}  onClick={loginAction} color='success'>Aceptar</Button></Link>
-              <Link to="/register"><Button variant="contained" sx={{fontSize: "22px", width: "300px", marginTop: "10px", fontFamily: "monospace", fontWeight: "bold"}}  onClick={loginAction2} color="error" >Denegar</Button></Link>
+              <Link to="/home"><Button variant="contained" sx={{fontSize: "22px", width: "300px", marginTop: "20px", fontFamily: "monospace", fontWeight: "bold"}}  color='success'>Aceptar</Button></Link>
+              <Link to="/register"><Button variant="contained" sx={{fontSize: "22px", width: "300px", marginTop: "10px", fontFamily: "monospace", fontWeight: "bold"}} color="error" >Denegar</Button></Link>
             </Container>            
         </>
 }
