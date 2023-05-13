@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import { Box, Container, Typography, TextField, Button, CardMedia, Card, CardContent } from '@mui/material'
-import back_log from "../../back-log.jpg"
+import React from 'react'
+import { Box, Typography, Button, CardMedia, Card, CardContent } from '@mui/material'
 import avatar from "../../avatar.jpg"
 import contacto1 from "../../contacto1.jpg"
 import contacto2 from "../../contacto2.jpg"
@@ -12,43 +11,18 @@ import doctor2 from "../../doctor2.jpg"
 import doctor3 from "../../doctor3.jpg"
 import doctor4 from "../../doctor4.jpg"
 import CallIcon from '@mui/icons-material/Call';
+import { Link } from 'react-router-dom'
+import LibraryBooksRoundedIcon from '@mui/icons-material/LibraryBooksRounded'
+import MedicalInformationOutlinedIcon from '@mui/icons-material/MedicalInformationOutlined';
 
-const Login = () => {
-
-  const [auth, setAuth] = useState(true);
-
-
-  const loginAction = () => {
-    setAuth(false)
-  }
-  return (
-      <>
-        {console.log(auth)}
-        { auth ? (
-          <>
-          <Box sx={{ width: "100vw", height: "100vh", backgroundImage: `url('${back_log}')`, backgroundPosition: 'center center', backgroundSize: "cover", opacity: "0.6", position: "relative" }} ></Box>
-          <Container sx={{
-            position: "absolute", display: "flex", justifyContent: "center", alignItems: "center", opacity: "1", width: "500px", height: "500px",
-            backgroundColor: "white",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            borderRadius: "20px",
-            flexDirection: "column",
-            fontSize: "32px"
-          }}>
-            <Typography variant='h3' sx={{fontWeight: "bold", fontFamily: "monospace"}}>Bienvenido a CPDC</Typography>
-            <TextField fullWidth inputProps={{ style: { fontSize: "22px" } }}  id="standard-basic" label="Usuario" variant="standard" size='medium' sx={{marginTop: "40px", fontFamily: "monospace"}}/>
-            <TextField fullWidth inputProps={{ style: { fontSize: "22px" } }} fontWeight="bold" id="standard-basic" label="Contraseña" variant="standard" size='medium' sx={{marginTop: "40px", fontFamily: "monospace"}}/>
-            <Button variant="contained" sx={{fontSize: "22px", width: "300px", marginTop: "60px", fontFamily: "monospace", fontWeight: "bold"}}  onClick={loginAction}>Iniciar sesión</Button>
-            {console.log(auth)}
-          </Container></>
-        ) : (
-          <>
+const Home = () => {
+    return (
+        <>
             <Box sx={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: "#E8F8F5"}}>
               <Box sx= {{ width: "90vw", height: "15vh", marginTop: "20px", display: "flex", flexDirection: "row", alignItems: "center", marginLeft: "80px"}}>
                 <CardMedia component="img" image={avatar}  sx={{height: "100px", width: "100px", borderRadius: "50%", border: "1px solid black"}}/>
                 <Typography paragraph sx={{ fontSize: "38px", fontFamily: "monospace", fontWeight: "bold", marginLeft: "30px"}}>Hola Juan Esteban Lugo</Typography>
+                <Link to="/"><Button variant="contained" sx={{fontSize: "14px", width: "70px", marginLeft: "390px",fontFamily: "monospace", fontWeight: "bold"}} color="error" >Salir</Button></Link>
               </Box>
               <Box sx={{ width: "90vw", height: "200px", textAlign: "left", marginTop: "40px"}}>
                 <Typography paragraph sx={{ fontSize: "38px", fontFamily: "monospace", fontWeight: "bold", marginLeft: "30px"}}>Tus contactos:</Typography>
@@ -159,13 +133,25 @@ const Login = () => {
                   </Card>
                 </Box>
               </Box>
-              <Box sx={{ width: "96vw", height: "100px"}}></Box>
+              <Box sx={{ width: "96vw", height: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
+                <Box sx={{ cursor: "pointer"}}>
+                    <LibraryBooksRoundedIcon sx={{ color: "green", width: "250px", height: "250px"}}/>
+                    <Typography paragraph sx={{color: "green", fontSize: "30px", fontFamily: "monospace", fontWeight: "bold"}}>Historial medico</Typography>
+                </Box>
+                <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginLeft: "150px"}}>
+                    <Box sx={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
+                        <MedicalInformationOutlinedIcon sx={{ color: "green", width: "250px", height: "250px"}}/>
+                        <Box sx={{display: "flex", flexDirection: "column"}}>
+                            <Button variant="contained" sx={{fontSize: "14px", width: "150px", marginLeft: "10px",fontFamily: "monospace", fontWeight: "bold", marginTop: "50px", backgroundColor:"orange"}} >Ver Examenes</Button>
+                            <Button variant="contained" sx={{fontSize: "14px", width: "150px", marginLeft: "10px",fontFamily: "monospace", fontWeight: "bold", marginTop: "20px", backgroundColor:"blue"}} color="error" >Cargar Examen</Button>
+                        </Box>
+                    </Box>
+                    <Typography paragraph sx={{color: "green", fontSize: "30px", fontFamily: "monospace", fontWeight: "bold"}}>Examenes medicos</Typography>
+                </Box>
+              </Box>
             </Box>
-            
-          </>
-        )}
-      </>
-  )
+        </>
+    )
 }
 
-export default Login
+export default Home
