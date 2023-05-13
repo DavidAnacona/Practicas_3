@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, Typography, Button } from '@mui/material'
 import { Link } from 'react-router-dom'
+import back_log from "../../back-log.jpg"
 
 const Politics  = () => {
     <>
