@@ -75,7 +75,7 @@ const Home = () => {
                 </Box>
               </Box>
               <Box sx={{ width: "96vw", height: "520px", backgroundColor: "#118528", marginTop: "180px", borderRadius: "20px", color: "white"}}>
-                <Typography paragraph sx={{fontSize: "40px", fontFamily: "monospace", fontWeight: "bold", marginTop: "20px"}}>Los profesionales para ti según su diagnóstico:</Typography>
+                <Typography paragraph sx={{fontSize: "40px", fontFamily: "monospace", fontWeight: "bold", marginTop: "20px"}}>Sugerencias de profesionales para ti:</Typography>
                 <Box sx={{ width: "100%", height: "300px", display: "flex", flexDirection: "row", justifyContent: "space-evenly", marginTop: "20px"}}>
                   <Card sx={{ width: "30%" , height: "150px", borderRadius: "15px" ,display: 'flex', cursor: "pointer" }}>
                     <Box sx={{ display: 'flex', flexDirection: 'column' }}>

@@ -8,6 +8,7 @@ import {
 import Login from './pages/auth/login'
 import Home from "./pages/home/index"
 import Register from './pages/auth/register'
+import Politics from "./pages/politics/index"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route exact path="/" element={<Login />} />
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/register" element={<Register />} />
+            <Route exact path="/politics" element={<Politics />} />
         </Routes>
       </div>
     </BrowserRouter>

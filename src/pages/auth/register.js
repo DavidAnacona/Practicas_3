@@ -57,7 +57,7 @@ const Register = () => {
             </FormControl>  
             <Typography paragraph sx={{ marginTop: "20px", fontSize: "18px", fontFamily: "monospace"}} >En caso de que su usuario seleccionado sea PACIENTE utilice el siguiente campo para subir su historia medica</Typography>
             <OutlinedInput type='file' sx={{width: "450px"}}></OutlinedInput>
-            <Link to="/home"><Button variant="contained" sx={{fontSize: "22px", width: "300px", marginTop: "30px", fontFamily: "monospace", fontWeight: "bold"}}  color="success" >Registrarse</Button></Link>
+            <Link to="/politics"><Button variant="contained" sx={{fontSize: "22px", width: "300px", marginTop: "30px", fontFamily: "monospace", fontWeight: "bold"}}  color="success" >Registrarse</Button></Link>
           </Container>
         </>
   )
