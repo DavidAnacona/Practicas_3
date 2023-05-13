@@ -5,13 +5,6 @@ import { Link } from 'react-router-dom'
 
 const Login = () => {
 
-  const [auth, setAuth] = useState(true);
-
-
-  const loginAction = () => {
-    setAuth(false)
-  }
-
   return (
       <>
             <Box sx={{ width: "100vw", height: "100vh", backgroundImage: `url('${back_log}')`, backgroundPosition: 'center center', backgroundSize: "cover", opacity: "0.6", position: "relative" }} >
