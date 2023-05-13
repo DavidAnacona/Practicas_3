@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import back_log from "../../back-log.jpg"
 
 const Politics  = () => {
-    <>
+    return(
+        <>
             <Box sx={{ width: "100vw", height: "100vh", backgroundImage: `url('${back_log}')`, backgroundPosition: 'center center', backgroundSize: "cover", opacity: "0.6", position: "relative" }} ></Box>
             <Container sx={{
               position: "absolute", display: "flex", justifyContent: "center", alignItems: "center", opacity: "1", width: "500px", height: "450px",
@@ -22,6 +23,7 @@ const Politics  = () => {
               <Link to="/register"><Button variant="contained" sx={{fontSize: "22px", width: "300px", marginTop: "10px", fontFamily: "monospace", fontWeight: "bold"}} color="error" >Denegar</Button></Link>
             </Container>            
         </>
+    )
 }
 
 export default Politics
